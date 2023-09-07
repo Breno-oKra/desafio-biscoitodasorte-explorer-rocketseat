@@ -1,0 +1,103 @@
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+main {
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0 20rem 50rem 0 rgba(0, 0, 0, 0.80);
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+
+}
+
+main div {
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+}
+
+h1 {
+    color: #34355B;
+    font-family: Montserrat;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.box-sort {
+   
+    width: 100%;
+    background: #E4EDF1;
+    box-shadow: .2rem .2rem .2rem 0 rgba(85, 85, 85, 0.50);
+    padding: .10rem;
+    transition: 2s all ;
+    animation: move 2s ;
+}
+
+p {
+    color: #34355B;
+    font-family: DM Sans;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: normal;
+    
+}
+.page2 p {
+    font-size: 2.4rem;
+    font-family: 'Dancing Script', cursive;
+}
+.imageBiscoit{
+    transition: 2s all ease-in;
+}
+.imageBiscoit:hover{
+    animation: infinite tremor 200ms;
+}
+button {
+    border: 0;
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: .4rem;
+    background: #FF9500;
+    padding: 1.6rem;
+}
+.btn-image{
+    background: none;
+}
+
+@keyframes tremor {
+    0%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateX(-10px);
+    }
+}
+@keyframes move{
+    from{
+        transform: translateY(150px) scale(0.1) ;
+    }
+    to{
+        transform: scale(1) translateY(0);
+    }
+}
